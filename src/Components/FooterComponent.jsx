@@ -1,7 +1,10 @@
 import { Footer } from 'flowbite-react';
 import Logo from "../assets/logo.png";
+import { getCurrentYear } from '../Data';
 
 const FooterComponent = () => {
+     const currectYear = getCurrentYear();
+
      return (
           <Footer container className="bg-[#F6F5F5]">
                <div className="w-full text-center">
@@ -12,7 +15,7 @@ const FooterComponent = () => {
                               alt="Logo Desa Kadulimus"
                          />
                          <Footer.LinkGroup>
-                              <Footer.Copyright href="#" by="Desa Kadulimus" year={2024} />
+                              <Footer.Copyright href="#" by="Desa Kadulimus" year={currectYear} />
                          </Footer.LinkGroup>
                     </div>
                </div>
